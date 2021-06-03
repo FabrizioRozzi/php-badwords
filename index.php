@@ -31,15 +31,35 @@
     Nulla fugit eveniet saepe minus repellat minima possimus quidem! Odit, commodi recusandae omnis totam tenetur nobis placeat distinctio eligendi ratione? Error aliquam odio tempora saepe facilis ratione iusto magni ea.';
   ?>
   
-
   <p>
     <?php echo $paragrafo ?>
   </p>
+
+
+
+
+  <h1>
+    Il paragrafo é lungo: 
+    <?php 
+      echo strlen($paragrafo);
+    ?>
+  </h1>
+
+  
   
   <?php 
-    echo str_replace("$bandit", "***", "$paragrafo");
+    $paragrafo= str_replace("$bandit", "***", "$paragrafo");
   ?>
+
+
+  <p>
+    <?php 
+      echo $paragrafo
+    ?>
+  </p>
+
   <h1>
+    
     Il paragrafo é lungo: 
     <?php 
       echo strlen($paragrafo);
