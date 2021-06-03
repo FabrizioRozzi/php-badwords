@@ -46,17 +46,12 @@
   </h1>
 
   
-  
-  <?php 
-    $paragrafo= str_replace("$bandit", "***", "$paragrafo");
-  ?>
-
-
   <p>
     <?php 
-      echo $paragrafo
+      echo $paragrafo= str_replace("$bandit", "***", "$paragrafo");
     ?>
   </p>
+  
 
   <h1>
     
